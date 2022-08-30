@@ -84,25 +84,27 @@ public class TV {
         }    
     }   
     
-    public void canalDown(int canal, TV tv){
-        boolean asd = tv.getEstado();
-        if (this.canal<=120 && this.canal>=1 && asd==true){
-            this.canal -= 1;
-        }
-    }
-    
-    public void volumenUp(int volumen, TV tv){
-        boolean asd = tv.getEstado();
-        if(this.volumen>=0 && this.volumen<=0 && asd==true){
-            this.volumen+=1;
-        }
-    }
-    
-    public void volumenDown(int volumen, TV tv){
-        boolean asd = tv.getEstado();
-        if(this.volumen>=0 && this.volumen<=0 && asd==true){
-            this.volumen-=1;
-        }
-    }
-    
+    public void canalUp() {
+		if (canal >= 1 && canal < 120 && estado == true) {
+			canal = canal + 1;
+		}
+	}
+
+	public void canalDown() {
+		if (1 < canal && canal <= 120 && estado == true) {
+			canal = canal - 1;
+		}
+	}
+
+	public void volumenUp() {
+		if (1 <= volumen && volumen < 7 && estado == true) {
+			volumen = volumen + 1;
+		}
+	}
+
+	public void volumenDown() {
+		if (1 < volumen && volumen <= 7 && estado == true) {
+			volumen = volumen - 1;
+		}
+}
 }
