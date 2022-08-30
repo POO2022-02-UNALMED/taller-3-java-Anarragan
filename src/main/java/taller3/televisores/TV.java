@@ -56,11 +56,11 @@ public class TV {
 	
     }
     
-    public static Integer setnumTV(Integer numTV){
-        if (numTV == this){
-            numTV += 1;
-        }
-    }
+    public static void setNumTV(int num) {
+		numTV = num;
+	}
+        
+    
     
     public static Integer getNumTV(){
         return numTV;
