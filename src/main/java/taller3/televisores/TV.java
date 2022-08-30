@@ -11,7 +11,6 @@ public class TV {
     
     public TV(Marca marca, boolean estado){
         this.marca=marca;
-        this.estado=estado;
     }
     
     public Marca getMarca(){
@@ -39,7 +38,11 @@ public class TV {
     }
     
     public void setVolumen(int volumen){
-        this.volumen=volumen;
+        if (volumen >= 1 && volumen <=7 && this.estado==true) {
+        	this.volumen = volumen;
+        }else {
+        	this.volumen;
+        }
     }
     
     public int getVolumen(){
@@ -47,12 +50,17 @@ public class TV {
     }
     
     public void setCanal(int canal){
-        this.canal=canal;
+    	if (canal >=1 && canal <= 120 && this.estado==true) {
+    		this.canal = canal;
+    	}else {
+    		this.canal;
+    	}
     }
     
     public int getCanal(){
         return canal;
     }
+    
     
     public void contadorTV(TV tv){
         if (tv == this){
