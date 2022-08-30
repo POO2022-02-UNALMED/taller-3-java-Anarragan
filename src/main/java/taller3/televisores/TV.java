@@ -77,13 +77,6 @@ public class TV {
         return estado;
     }
     
-    public void canalUp(int canal, TV tv){
-        boolean asd = tv.getEstado();
-        if (this.canal<=120 && this.canal>=1 && asd==true){
-            this.canal += 1;
-        }    
-    }   
-    
     public void canalUp() {
 		if (canal >= 1 && canal < 120 && estado == true) {
 			canal = canal + 1;
