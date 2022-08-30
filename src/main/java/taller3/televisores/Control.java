@@ -1,4 +1,4 @@
-package taller3.televisores
+package taller3.televisores;
 
 public class Control {
     TV tv;
