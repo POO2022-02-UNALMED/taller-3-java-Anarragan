@@ -19,8 +19,7 @@ public class TV {
     
     public void setMarca(Marca marca){
         this.marca=marca;
-}
-    
+    }
     public void setControl(Control control){
         this.control = control;
     }
@@ -76,10 +75,6 @@ public class TV {
     
     public boolean getEstado(){
         return estado;
-    }
-    
-    public boolean setEstado (boolean estado) {
-    	this.estado = estado;
     }
     
     public void canalUp(int canal, TV tv){
