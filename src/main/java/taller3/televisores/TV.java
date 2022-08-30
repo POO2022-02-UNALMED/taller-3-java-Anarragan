@@ -41,11 +41,20 @@ public class TV {
         return volumen;
     }
     
-    
+    public void setVolumen(Integer volumen) {
+	if (1 <= volumen && canal <= 7 && estado == true) {
+		this.volumen = volumen;			
+	}
+}
     public int getCanal(){
         return canal;
     }
-    
+    public void setCanal(Integer canal) {
+		if (estado == true  && canal >= 1 && canal <= 120) {
+			this.canal = canal;			
+		}
+	
+    }
     
     public static Integer setnumTV(Integer numTV){
         if (numTV == this){
